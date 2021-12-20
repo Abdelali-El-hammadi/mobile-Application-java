@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="hola()">
+    hhh
+</body>
+<script>
+
+
+    async function hola(){
+        var data=await fetch("http://localhost:8080/api/getAccount/2");
+        var bro= await data.json();
+        console.log(bro);
+
+    }
+</script>
+</html>
